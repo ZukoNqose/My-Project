@@ -1,0 +1,75 @@
+Functional and Non-Functional Tests (PA0101)
+
+Functional
+
+1. Backend API Tests
+> GET /api/todo
+- Return all data
+- Return expected format
+
+> POST /api/Todo
+-
+-
+
+> GET /api/Todo/{id}
+- Return expected format
+- Return error for Non-existent id
+
+2. Data Validation Tests
+
+> Title Validation
+-
+-
+
+> IsComplete Validation
+-
+-
+
+3. Database integration Tests
+
+> Database Connection
+-
+-
+
+> Data persistence 
+-
+-
+
+Frontend Tests (React/Angular)
+1. User interface Tests
+
+> Todo List display
+-
+-
+
+> Todo input
+-
+-
+
+2. Filter Functionality
+> Filter buttons
+-
+-
+
+3. User interaction Tests
+> creating
+-
+-
+
+> viewing
+-
+-
+
+API integration Tests
+> ALL api calls
+
+
+Non-Functional Tests
+
+Performance Tests
+Security tests (CORS)
+Reliablity / availability tests
+Error handling
+Data integration
+Usability tests
+compatability tests

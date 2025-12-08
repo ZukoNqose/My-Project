@@ -1,0 +1,21 @@
+<form (ngSubmit)="onSubmit()" class="todo-form">
+  <input
+    type="text"
+    [value]="title()"
+    (input)="title.set($any($event.target).value)"
+    placeholder="Add a new todo..."
+    maxlength="120"
+    required
+    [disabled]="loading()"
+    class="todo-input"
+    aria-label="Todo title"
+  />
+  <button
+    type="submit"
+    [disabled]="!title().trim() || loading()"
+    class="add-button"
+    [attr.aria-busy]="loading()"
+  >
+    {{ loading() ? 'Adding...' : 'Add' }}
+  </button>
+</form>

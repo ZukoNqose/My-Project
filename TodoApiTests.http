@@ -1,0 +1,674 @@
+### ============================================
+### TODO API COMPREHENSIVE TEST SUITE
+### ============================================
+### Compatible with: VS Code REST Client, IntelliJ HTTP Client, Postman
+### Test Coverage: Functional, Non-Functional, Security, Edge Cases
+### ============================================
+
+### Configuration
+@baseUrl = http://localhost:5000
+@apiUrl = {{baseUrl}}/api/todo
+@swaggerUrl = {{baseUrl}}/swagger
+
+### Test Variables (Update these after creating todos)
+@testId = 1
+@testId2 = 2
+@invalidId = 99999
+
+### ============================================
+### SECTION 1: FUNCTIONAL TESTS - CRUD Operations
+### ============================================
+
+### ============================================
+### FT-001: GET All Todos
+### Test ID: FT-001 | Category: Functional - Read | Priority: High
+### Objective: Verify GET /api/todo returns all todos
+### Expected: 200 OK with array of todos (empty array if none exist)
+### ============================================
+
+GET {{apiUrl}}
+Accept: application/json
+
+### FT-001-Variant: GET All Todos - Verify Empty State
+GET {{apiUrl}}
+Accept: application/json
+
+### ============================================
+### FT-002: GET Single Todo by ID
+### Test ID: FT-002 | Category: Functional - Read | Priority: High
+### Objective: Verify GET /api/todo/{id} returns specific todo
+### Expected: 200 OK with todo object
+### Prerequisite: Create a todo first and update @testId
+### ============================================
+
+GET {{apiUrl}}/{{testId}}
+Accept: application/json
+
+### ============================================
+### FT-003: GET Todo - Not Found
+### Test ID: FT-003 | Category: Functional - Error Handling | Priority: Medium
+### Objective: Verify GET returns 404 for invalid ID
+### Expected: 404 Not Found
+### ============================================
+
+GET {{apiUrl}}/{{invalidId}}
+Accept: application/json
+
+### FT-003-Variant: GET with Negative ID
+GET {{apiUrl}}/-1
+Accept: application/json
+
+### FT-003-Variant: GET with Zero ID
+GET {{apiUrl}}/0
+Accept: application/json
+
+### FT-003-Variant: GET with String ID (Should return 400)
+GET {{apiUrl}}/abc
+Accept: application/json
+
+### ============================================
+### FT-004: POST Create Todo - Valid Data
+### Test ID: FT-004 | Category: Functional - Create | Priority: High
+### Objective: Verify POST /api/todo creates new todo
+### Expected: 201 Created with created todo object (including ID)
+### ============================================
+
+POST {{apiUrl}}
+Content-Type: application/json
+
+{
+  "title": "Test Todo Item - FT-004",
+  "isComplete": false
+}
+
+### FT-004-Variant: Create Todo - Already Complete
+POST {{apiUrl}}
+Content-Type: application/json
+
+{
+  "title": "Pre-completed Todo",
+  "isComplete": true
+}
+
+### FT-004-Variant: Create Multiple Todos for Testing
+POST {{apiUrl}}
+Content-Type: application/json
+
+{
+  "title": "First Todo",
+  "isComplete": false
+}
+
+###
+POST {{apiUrl}}
+Content-Type: application/json
+
+{
+  "title": "Second Todo",
+  "isComplete": false
+}
+
+###
+POST {{apiUrl}}
+Content-Type: application/json
+
+{
+  "title": "Third Todo",
+  "isComplete": true
+}
+
+### ============================================
+### FT-005: POST Create Todo - Input Validation
+### Test ID: FT-005 | Category: Functional - Validation | Priority: High
+### Objective: Verify POST rejects empty/invalid data
+### Expected: 400 Bad Request or validation error
+### ============================================
+
+### FT-005-Variant: Empty Title
+POST {{apiUrl}}
+Content-Type: application/json
+
+{
+  "title": "",
+  "isComplete": false
+}
+
+### FT-005-Variant: Missing Title Field
+POST {{apiUrl}}
+Content-Type: application/json
+
+{
+  "isComplete": false
+}
+
+### FT-005-Variant: Null Title
+POST {{apiUrl}}
+Content-Type: application/json
+
+{
+  "title": null,
+  "isComplete": false
+}
+
+### FT-005-Variant: Whitespace Only Title
+POST {{apiUrl}}
+Content-Type: application/json
+
+{
+  "title": "   ",
+  "isComplete": false
+}
+
+### FT-005-Variant: Very Long Title (120+ characters)
+POST {{apiUrl}}
+Content-Type: application/json
+
+{
+  "title": "This is a very long todo title that exceeds the normal length and should test the application's handling of long input strings to ensure proper validation and display capabilities",
+  "isComplete": false
+}
+
+### FT-005-Variant: Special Characters
+POST {{apiUrl}}
+Content-Type: application/json
+
+{
+  "title": "Todo with special chars: !@#$%^&*()_+-=[]{}|;':\",./<>?",
+  "isComplete": false
+}
+
+### FT-005-Variant: Unicode and Emoji
+POST {{apiUrl}}
+Content-Type: application/json
+
+{
+  "title": "Todo with emoji 😀 🎉 ✅ and Unicode 中文 العربية русский",
+  "isComplete": false
+}
+
+### FT-005-Variant: HTML Tags
+POST {{apiUrl}}
+Content-Type: application/json
+
+{
+  "title": "<b>Bold</b> and <i>Italic</i> text",
+  "isComplete": false
+}
+
+### FT-005-Variant: SQL Injection Attempt
+POST {{apiUrl}}
+Content-Type: application/json
+
+{
+  "title": "'; DROP TABLE Todos; --",
+  "isComplete": false
+}
+
+### FT-005-Variant: XSS Attempt
+POST {{apiUrl}}
+Content-Type: application/json
+
+{
+  "title": "<script>alert('XSS')</script>",
+  "isComplete": false
+}
+
+### ============================================
+### FT-006: PUT Update Todo
+### Test ID: FT-006 | Category: Functional - Update | Priority: High
+### Objective: Verify PUT /api/todo/{id} updates todo
+### Expected: 204 No Content
+### Prerequisite: Update @testId with valid todo ID
+### ============================================
+
+### FT-006-Variant: Update Title Only
+PUT {{apiUrl}}/{{testId}}
+Content-Type: application/json
+
+{
+  "id": {{testId}},
+  "title": "Updated Todo Title - FT-006",
+  "isComplete": false
+}
+
+### FT-006-Variant: Toggle Completion Status
+PUT {{apiUrl}}/{{testId}}
+Content-Type: application/json
+
+{
+  "id": {{testId}},
+  "title": "Updated Todo Title - FT-006",
+  "isComplete": true
+}
+
+### FT-006-Variant: Update Both Title and Status
+PUT {{apiUrl}}/{{testId}}
+Content-Type: application/json
+
+{
+  "id": {{testId}},
+  "title": "Completely Updated Todo",
+  "isComplete": true
+}
+
+### FT-006-Variant: Update with Same Values (Idempotent)
+PUT {{apiUrl}}/{{testId}}
+Content-Type: application/json
+
+{
+  "id": {{testId}},
+  "title": "Completely Updated Todo",
+  "isComplete": true
+}
+
+### ============================================
+### FT-007: PUT Update Todo - Error Cases
+### Test ID: FT-007 | Category: Functional - Error Handling | Priority: Medium
+### Objective: Verify PUT returns 400 when ID mismatch
+### Expected: 400 Bad Request
+### ============================================
+
+### FT-007-Variant: ID Mismatch
+PUT {{apiUrl}}/2
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "Mismatched ID Test",
+  "isComplete": false
+}
+
+### FT-007-Variant: Invalid ID in URL
+PUT {{apiUrl}}/{{invalidId}}
+Content-Type: application/json
+
+{
+  "id": {{invalidId}},
+  "title": "Non-existent Todo",
+  "isComplete": false
+}
+
+### FT-007-Variant: Missing ID in Body
+PUT {{apiUrl}}/{{testId}}
+Content-Type: application/json
+
+{
+  "title": "Missing ID",
+  "isComplete": false
+}
+
+### FT-007-Variant: Missing Required Fields
+PUT {{apiUrl}}/{{testId}}
+Content-Type: application/json
+
+{
+  "id": {{testId}},
+  "title": "Only Title"
+}
+
+### ============================================
+### FT-008: DELETE Todo
+### Test ID: FT-008 | Category: Functional - Delete | Priority: High
+### Objective: Verify DELETE /api/todo/{id} removes todo
+### Expected: 204 No Content
+### Prerequisite: Update @testId with valid todo ID
+### ============================================
+
+DELETE {{apiUrl}}/{{testId}}
+Accept: application/json
+
+### ============================================
+### FT-009: DELETE Todo - Error Cases
+### Test ID: FT-009 | Category: Functional - Error Handling | Priority: Medium
+### Objective: Verify DELETE returns 404 for invalid ID
+### Expected: 404 Not Found
+### ============================================
+
+DELETE {{apiUrl}}/{{invalidId}}
+Accept: application/json
+
+### FT-009-Variant: Delete with Negative ID
+DELETE {{apiUrl}}/-1
+Accept: application/json
+
+### FT-009-Variant: Delete with Zero ID
+DELETE {{apiUrl}}/0
+Accept: application/json
+
+### ============================================
+### SECTION 2: NON-FUNCTIONAL TESTS - Performance
+### ============================================
+
+### ============================================
+### NFT-001: Performance - Response Time
+### Test ID: NFT-001 | Category: Non-Functional - Performance | Priority: High
+### Objective: Verify API endpoints respond within acceptable time
+### Expected: < 200ms response time
+### Metric: Response time should be measured
+### ============================================
+
+### NFT-001: GET All - Measure Response Time
+GET {{apiUrl}}
+Accept: application/json
+
+### NFT-001: GET Single - Measure Response Time
+GET {{apiUrl}}/{{testId}}
+Accept: application/json
+
+### NFT-001: POST Create - Measure Response Time
+POST {{apiUrl}}
+Content-Type: application/json
+
+{
+  "title": "Performance Test Todo",
+  "isComplete": false
+}
+
+### NFT-001: PUT Update - Measure Response Time
+PUT {{apiUrl}}/{{testId}}
+Content-Type: application/json
+
+{
+  "id": {{testId}},
+  "title": "Performance Updated",
+  "isComplete": false
+}
+
+### NFT-001: DELETE - Measure Response Time
+DELETE {{apiUrl}}/{{testId}}
+Accept: application/json
+
+### ============================================
+### NFT-002: Performance - Load Test
+### Test ID: NFT-002 | Category: Non-Functional - Performance | Priority: High
+### Objective: Test application under load
+### Expected: Handle 50+ concurrent requests/second
+### Note: Run these requests in quick succession or use load testing tool
+### ============================================
+
+### Load Test - Multiple GET Requests (Run 10+ times)
+GET {{apiUrl}}
+Accept: application/json
+
+###
+GET {{apiUrl}}
+Accept: application/json
+
+###
+GET {{apiUrl}}
+Accept: application/json
+
+### ============================================
+### NFT-004: Performance - Large Dataset Test
+### Test ID: NFT-004 | Category: Non-Functional - Performance | Priority: Medium
+### Objective: Test with large number of todos
+### Expected: No performance degradation
+### ============================================
+
+### Create multiple todos for large dataset testing
+POST {{apiUrl}}
+Content-Type: application/json
+
+{
+  "title": "Large Dataset Todo 1",
+  "isComplete": false
+}
+
+###
+POST {{apiUrl}}
+Content-Type: application/json
+
+{
+  "title": "Large Dataset Todo 2",
+  "isComplete": false
+}
+
+### Then test GET all with many todos
+GET {{apiUrl}}
+Accept: application/json
+
+### ============================================
+### SECTION 3: SECURITY TESTS
+### ============================================
+
+### ============================================
+### NFT-005: Security - CORS Test
+### Test ID: NFT-005 | Category: Non-Functional - Security | Priority: High
+### Objective: Verify CORS configuration
+### Expected: Only allowed origins can access API
+### ============================================
+
+### NFT-005: CORS Test - Allowed Origin
+GET {{apiUrl}}
+Accept: application/json
+Origin: http://localhost:3000
+
+### NFT-005: CORS Test - Another Allowed Origin
+GET {{apiUrl}}
+Accept: application/json
+Origin: http://localhost:4200
+
+### NFT-005: CORS Test - Unauthorized Origin (Should be blocked)
+GET {{apiUrl}}
+Accept: application/json
+Origin: http://malicious-site.com
+
+### ============================================
+### NFT-006: Security - Input Validation
+### Test ID: NFT-006 | Category: Non-Functional - Security | Priority: High
+### Objective: Verify input sanitization prevents attacks
+### Expected: Input is sanitized, no SQL injection or XSS
+### ============================================
+
+### NFT-006: Security Test - SQL Injection Attempt
+POST {{apiUrl}}
+Content-Type: application/json
+
+{
+  "title": "'; DROP TABLE Todos; --",
+  "isComplete": false
+}
+
+### NFT-006: Security Test - XSS Attempt
+POST {{apiUrl}}
+Content-Type: application/json
+
+{
+  "title": "<script>alert('XSS')</script>",
+  "isComplete": false
+}
+
+### NFT-006: Security Test - HTML Tags
+POST {{apiUrl}}
+Content-Type: application/json
+
+{
+  "title": "<b>Bold Text</b> and <i>Italic</i>",
+  "isComplete": false
+}
+
+### ============================================
+### SECTION 4: EDGE CASES & EXPLORATORY TESTS
+### ============================================
+
+### Edge Case: Null Values
+POST {{apiUrl}}
+Content-Type: application/json
+
+{
+  "title": null,
+  "isComplete": false
+}
+
+### Edge Case: Whitespace Only
+POST {{apiUrl}}
+Content-Type: application/json
+
+{
+  "title": "   ",
+  "isComplete": false
+}
+
+### Edge Case: Very Long String (500+ chars)
+POST {{apiUrl}}
+Content-Type: application/json
+
+{
+  "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+  "isComplete": false
+}
+
+### Edge Case: Negative ID
+GET {{apiUrl}}/-1
+Accept: application/json
+
+### Edge Case: Zero ID
+GET {{apiUrl}}/0
+Accept: application/json
+
+### Edge Case: String ID (Should return 400)
+GET {{apiUrl}}/abc
+Accept: application/json
+
+### Edge Case: Update with Missing Fields
+PUT {{apiUrl}}/{{testId}}
+Content-Type: application/json
+
+{
+  "id": {{testId}},
+  "title": "Only Title"
+}
+
+### Edge Case: Update with Extra Fields
+PUT {{apiUrl}}/{{testId}}
+Content-Type: application/json
+
+{
+  "id": {{testId}},
+  "title": "Updated Title",
+  "isComplete": false,
+  "extraField": "should be ignored"
+}
+
+### ============================================
+### SECTION 5: INTEGRATION TEST SCENARIOS
+### ============================================
+
+### Scenario 1: Complete CRUD Workflow
+### Step 1: Create
+POST {{apiUrl}}
+Content-Type: application/json
+
+{
+  "title": "Integration Test Todo",
+  "isComplete": false
+}
+
+### Step 2: Read (use ID from Step 1 response)
+GET {{apiUrl}}/{{testId}}
+Accept: application/json
+
+### Step 3: Update (use ID from Step 1)
+PUT {{apiUrl}}/{{testId}}
+Content-Type: application/json
+
+{
+  "id": {{testId}},
+  "title": "Updated Integration Test Todo",
+  "isComplete": true
+}
+
+### Step 4: Verify Update
+GET {{apiUrl}}/{{testId}}
+Accept: application/json
+
+### Step 5: Delete (use ID from Step 1)
+DELETE {{apiUrl}}/{{testId}}
+Accept: application/json
+
+### Step 6: Verify Deletion
+GET {{apiUrl}}/{{testId}}
+Accept: application/json
+
+### Scenario 2: Bulk Operations
+### Create multiple todos, then verify all are returned
+GET {{apiUrl}}
+Accept: application/json
+
+### ============================================
+### SECTION 6: ERROR HANDLING TESTS
+### ============================================
+
+### Error Test: Invalid JSON
+POST {{apiUrl}}
+Content-Type: application/json
+
+{
+  "title": "Test",
+  "isComplete": invalid
+}
+
+### Error Test: Missing Content-Type
+POST {{apiUrl}}
+
+{
+  "title": "Test",
+  "isComplete": false
+}
+
+### Error Test: Wrong HTTP Method
+PATCH {{apiUrl}}/{{testId}}
+Content-Type: application/json
+
+{
+  "title": "Test"
+}
+
+### Error Test: Invalid Endpoint
+GET {{baseUrl}}/api/invalid
+Accept: application/json
+
+### ============================================
+### SECTION 7: SWAGGER/API DOCUMENTATION
+### ============================================
+
+### Access Swagger UI
+GET {{swaggerUrl}}
+Accept: text/html
+
+### Access Swagger JSON
+GET {{baseUrl}}/swagger/v1/swagger.json
+Accept: application/json
+
+### ============================================
+### TESTING NOTES
+### ============================================
+
+### Instructions:
+### 1. Update @testId variable with actual todo ID from POST responses
+### 2. Run tests in order for integration scenarios
+### 3. Check response times for performance tests
+### 4. Verify HTTP status codes match expected results
+### 5. Check response bodies for correct data structure
+### 6. Test with both valid and invalid data
+### 7. Verify error messages are user-friendly
+### 8. Test CORS headers in browser DevTools Network tab
+
+### Expected Status Codes:
+### - 200 OK: Successful GET requests
+### - 201 Created: Successful POST requests
+### - 204 No Content: Successful PUT/DELETE requests
+### - 400 Bad Request: Invalid input or ID mismatch
+### - 404 Not Found: Resource doesn't exist
+### - 500 Internal Server Error: Server-side errors
+
+### Test Execution Checklist:
+### [ ] All functional tests (FT-001 to FT-009) executed
+### [ ] All non-functional tests (NFT-001 to NFT-006) executed
+### [ ] Edge cases tested
+### [ ] Integration scenarios completed
+### [ ] Error handling verified
+### [ ] Performance metrics recorded
+### [ ] Security tests passed
+### [ ] Results documented in test report
+

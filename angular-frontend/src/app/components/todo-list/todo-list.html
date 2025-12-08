@@ -1,0 +1,29 @@
+<main class="container" aria-label="Todo App">
+  <h1 class="title">Todo List</h1>
+  
+  <app-todo-input
+    (addTodo)="onAddTodo($event)"
+    [loading]="isCreating"
+  ></app-todo-input>
+  
+  <app-filter-bar
+    [currentFilter]="currentFilter()"
+    (filterChange)="onFilterChange($event)"
+  ></app-filter-bar>
+  
+  <div *ngIf="isLoading()" class="status-message">Loading...</div>
+  <div *ngIf="error()" class="status-message error" role="alert">
+    {{ error() }}
+  </div>
+  
+  <ul *ngIf="!isLoading() && !error()" class="todo-list">
+    <li *ngFor="let todo of filteredTodos()">
+      <app-todo-row
+        [todo]="todo"
+        (toggle)="onToggleTodo(todo)"
+        (edit)="onEditTodo(todo, $event)"
+        (delete)="onDeleteTodo(todo.id)"
+      ></app-todo-row>
+    </li>
+  </ul>
+</main>

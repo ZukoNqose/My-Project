@@ -1,0 +1,41 @@
+<div class="todo-row" [class.completed]="todo.isComplete">
+  <input
+    type="checkbox"
+    [checked]="todo.isComplete"
+    (change)="onToggle()"
+    [attr.aria-label]="todo.isComplete ? 'Mark as incomplete' : 'Mark as complete'"
+    class="todo-checkbox"
+  />
+  <span
+    *ngIf="!editing()"
+    (click)="startEditing()"
+    (keydown.enter)="startEditing()"
+    (keydown.space)="startEditing()"
+    [class.completed-text]="todo.isComplete"
+    class="todo-title"
+    tabindex="0"
+    role="button"
+    [attr.aria-label]="'Edit: ' + todo.title"
+  >
+    {{ todo.title }}
+  </span>
+  <input
+    *ngIf="editing()"
+    #editInput
+    type="text"
+    [value]="editTitle()"
+    (input)="editTitle.set($any($event.target).value)"
+    (blur)="saveEdit()"
+    (keydown.enter)="saveEdit()"
+    (keydown.escape)="cancelEdit()"
+    class="edit-input"
+    aria-label="Edit todo"
+  />
+  <button
+    (click)="onDelete()"
+    class="delete-button"
+    aria-label="Delete todo"
+  >
+    ✕
+  </button>
+</div>

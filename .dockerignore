@@ -1,0 +1,11 @@
+bin/
+obj/
+.vs/
+.vscode/
+*.user
+*.suo
+*.log
+node_modules/
+*.DS_Store
+.git/
+appsettings.Development.json

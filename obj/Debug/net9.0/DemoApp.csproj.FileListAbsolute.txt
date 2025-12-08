@@ -1,0 +1,357 @@
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\appsettings.Development.json
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\appsettings.json
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\DemoApp.staticwebassets.endpoints.json
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\DemoApp.exe
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\DemoApp.deps.json
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\DemoApp.runtimeconfig.json
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\DemoApp.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\DemoApp.pdb
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Azure.Core.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Azure.Identity.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Humanizer.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Microsoft.Build.Locator.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Microsoft.Data.SqlClient.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Microsoft.Extensions.Caching.Memory.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Microsoft.Identity.Client.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Microsoft.OpenApi.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Mono.TextTemplating.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\System.ClientModel.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\System.CodeDom.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\System.Composition.AttributedModel.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\System.Composition.Convention.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\System.Composition.Hosting.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\System.Composition.Runtime.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\System.Composition.TypedParts.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\System.Drawing.Common.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\System.Formats.Asn1.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\System.Memory.Data.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\System.Runtime.Caching.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\System.Security.Permissions.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\System.Text.Json.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\System.Windows.Extensions.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\SE_\weekunknown\DemoApp\obj\Debug\net9.0\DemoApp.csproj.AssemblyReference.cache
+D:\SE_\weekunknown\DemoApp\obj\Debug\net9.0\DemoApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\SE_\weekunknown\DemoApp\obj\Debug\net9.0\DemoApp.AssemblyInfoInputs.cache
+D:\SE_\weekunknown\DemoApp\obj\Debug\net9.0\DemoApp.AssemblyInfo.cs
+D:\SE_\weekunknown\DemoApp\obj\Debug\net9.0\DemoApp.csproj.CoreCompileInputs.cache
+D:\SE_\weekunknown\DemoApp\obj\Debug\net9.0\DemoApp.MvcApplicationPartsAssemblyInfo.cs
+D:\SE_\weekunknown\DemoApp\obj\Debug\net9.0\DemoApp.MvcApplicationPartsAssemblyInfo.cache
+D:\SE_\weekunknown\DemoApp\obj\Debug\net9.0\scopedcss\bundle\DemoApp.styles.css
+D:\SE_\weekunknown\DemoApp\obj\Debug\net9.0\staticwebassets.build.json
+D:\SE_\weekunknown\DemoApp\obj\Debug\net9.0\staticwebassets.development.json
+D:\SE_\weekunknown\DemoApp\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+D:\SE_\weekunknown\DemoApp\obj\Debug\net9.0\staticwebassets\msbuild.DemoApp.Microsoft.AspNetCore.StaticWebAssets.props
+D:\SE_\weekunknown\DemoApp\obj\Debug\net9.0\staticwebassets\msbuild.DemoApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\SE_\weekunknown\DemoApp\obj\Debug\net9.0\staticwebassets\msbuild.build.DemoApp.props
+D:\SE_\weekunknown\DemoApp\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.DemoApp.props
+D:\SE_\weekunknown\DemoApp\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.DemoApp.props
+D:\SE_\weekunknown\DemoApp\obj\Debug\net9.0\staticwebassets.pack.json
+D:\SE_\weekunknown\DemoApp\obj\Debug\net9.0\DemoApp.csproj.Up2Date
+D:\SE_\weekunknown\DemoApp\obj\Debug\net9.0\DemoApp.dll
+D:\SE_\weekunknown\DemoApp\obj\Debug\net9.0\refint\DemoApp.dll
+D:\SE_\weekunknown\DemoApp\obj\Debug\net9.0\DemoApp.pdb
+D:\SE_\weekunknown\DemoApp\obj\Debug\net9.0\DemoApp.genruntimeconfig.cache
+D:\SE_\weekunknown\DemoApp\obj\Debug\net9.0\ref\DemoApp.dll
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\frontend\package-lock.json
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\frontend\package.json
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\frontend\tsconfig.app.json
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\frontend\tsconfig.json
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\frontend\tsconfig.node.json
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\angular-frontend\angular.json
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\angular-frontend\package-lock.json
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\angular-frontend\package.json
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\angular-frontend\proxy.conf.json
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\angular-frontend\tsconfig.app.json
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\angular-frontend\tsconfig.json
+D:\SE_\weekunknown\DemoApp\bin\Debug\net9.0\angular-frontend\tsconfig.spec.json
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\appsettings.json
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\DemoApp.staticwebassets.endpoints.json
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\angular-frontend\angular.json
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\angular-frontend\package-lock.json
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\angular-frontend\package.json
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\angular-frontend\proxy.conf.json
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\angular-frontend\tsconfig.app.json
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\angular-frontend\tsconfig.json
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\angular-frontend\tsconfig.spec.json
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\frontend\package-lock.json
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\frontend\package.json
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\frontend\tsconfig.app.json
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\frontend\tsconfig.json
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\frontend\tsconfig.node.json
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\DemoApp.exe
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\DemoApp.deps.json
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\DemoApp.runtimeconfig.json
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\DemoApp.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\DemoApp.pdb
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Azure.Core.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Azure.Identity.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Humanizer.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Microsoft.Build.Locator.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Microsoft.Data.SqlClient.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Microsoft.Identity.Client.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Microsoft.OpenApi.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Mono.TextTemplating.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\System.ClientModel.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\System.CodeDom.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\System.Composition.AttributedModel.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\System.Composition.Convention.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\System.Composition.Hosting.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\System.Composition.Runtime.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\System.Composition.TypedParts.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\System.Drawing.Common.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\System.Memory.Data.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\System.Runtime.Caching.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\System.Security.Permissions.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\System.Windows.Extensions.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\obj\Debug\net9.0\DemoApp.csproj.AssemblyReference.cache
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\obj\Debug\net9.0\DemoApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\obj\Debug\net9.0\DemoApp.AssemblyInfoInputs.cache
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\obj\Debug\net9.0\DemoApp.AssemblyInfo.cs
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\obj\Debug\net9.0\DemoApp.csproj.CoreCompileInputs.cache
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\obj\Debug\net9.0\DemoApp.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\obj\Debug\net9.0\DemoApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\obj\Debug\net9.0\scopedcss\bundle\DemoApp.styles.css
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\obj\Debug\net9.0\DemoApp.csproj.Up2Date
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\obj\Debug\net9.0\DemoApp.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\obj\Debug\net9.0\refint\DemoApp.dll
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\obj\Debug\net9.0\DemoApp.pdb
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\obj\Debug\net9.0\DemoApp.genruntimeconfig.cache
+C:\Users\ZUKO NQOSE\OneDrive\Desktop\DemoApp\DemoApp\obj\Debug\net9.0\ref\DemoApp.dll

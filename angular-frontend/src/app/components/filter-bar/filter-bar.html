@@ -1,0 +1,13 @@
+<div class="filter-bar" role="tablist" aria-label="Filter todos">
+  <button
+    type="button"
+    *ngFor="let filter of filters"
+    [class.active]="currentFilter === filter"
+    (click)="onFilterChange(filter)"
+    [attr.aria-selected]="currentFilter === filter"
+    role="tab"
+    class="filter-button"
+  >
+    {{ filter | titlecase }}
+  </button>
+</div>

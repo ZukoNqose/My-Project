@@ -1,0 +1,29 @@
+.todo-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.todo-input {
+  flex: 1 1 auto;
+  padding: 0.55rem 0.7rem;
+  font-size: 1rem;
+  border-radius: 0.6rem;
+  border: 1px solid #bbb;
+}
+
+.add-button {
+  background: #61dafb;
+  color: #222;
+  border: none;
+  border-radius: 0.7rem;
+  padding: 0 1.3rem;
+  font-size: 1.04rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.add-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

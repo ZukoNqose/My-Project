@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: demoapp-web
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+      - "ConnectionStrings__DefaultConnection=Server=tcp:demo-app-sqlsvr.database.windows.net,1433;Initial Catalog=Demodb;Persist Security Info=False;User ID=azuresvradmin;Password=Password01#;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+      - CORS_ORIGINS=http://localhost:5173,http://localhost:3000
+    ports:
+      - "5000:80"
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: demoapp-frontend
+    depends_on:
+      - web
+    environment:
+      - VITE_API_BASE=http://localhost:5000
+    ports:
+      - "3000:80"
+    volumes:
+      # Optional: for development hot-reload (remove in production)
+      - ./frontend:/app
+      - /app/node_modules
+
+volumes:
+  mssqldata:
