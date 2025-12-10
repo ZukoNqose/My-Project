@@ -1,68 +1,56 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root{
+  --bg:#121212;
+  --panel:#1e1e1e;
+  --muted:#9aa0a6;
+  --accent:#4f9dff;
+  --accent-2:#7bd389;
+  --text:#e6e6e6;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{
+  margin:0;
+  font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
+/* Layout */
+.app-root{min-height:100vh;display:flex;flex-direction:column}
+.content{flex:1;padding:28px;max-width:1100px;margin:0 auto;width:100%}
+.footer{text-align:center;padding:14px 10px;color:var(--muted);font-size:13px}
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+/* Nav */
+.nav{display:flex;justify-content:space-between;align-items:center;padding:10px 20px;background:var(--panel);border-bottom:1px solid rgba(255,255,255,0.03)}
+.brand{font-weight:700;color:var(--accent);text-decoration:none}
+.nav-right a{color:var(--text);text-decoration:none;margin-left:14px}
+.nav-right a.login-link{background:var(--accent);padding:6px 10px;border-radius:6px;color:#fff}
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
+/* Hero */
+.hero{display:flex;flex-direction:column;align-items:flex-start;padding:60px 20px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent)}
+.hero-title{font-size:48px;margin:0 0 8px}
+.hero-sub{color:var(--muted);margin:0}
+
+/* cards and grid */
+.card-row{display:flex;gap:16px;margin-top:18px}
+.card{background:var(--panel);padding:16px;border-radius:8px;min-width:180px}
+.product-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px;margin-top:14px}
+.product-card{background:var(--panel);padding:12px;border-radius:8px}
+
+/* table */
+.table{margin-top:12px;border-radius:8px;overflow:hidden}
+.table-row{display:grid;grid-template-columns:2fr 3fr 1fr;padding:10px 12px;border-bottom:1px solid rgba(255,255,255,0.03)}
+.table-head{background:rgba(255,255,255,0.02);font-weight:600}
+
+/* forms */
+.form-wrap{max-width:420px;background:var(--panel);padding:20px;border-radius:8px}
+.form label{display:block;margin-bottom:10px;color:var(--muted)}
+.form input{display:block;width:100%;padding:10px;border-radius:6px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--text)}
+
+/* buttons */
+.button{display:inline-block;background:var(--accent);color:#fff;padding:8px 12px;border-radius:8px;border:none;cursor:pointer}
+.button.small{padding:6px 8px;font-size:14px}
+.button.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--text)}

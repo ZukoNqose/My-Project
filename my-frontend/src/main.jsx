@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./components/Home.jsx";
-import Login from "./components/Login.jsx";
-import Index from "./components/Index.jsx";
-import Products from "./components/Products.jsx";
+import Home from "./pages/Home.jsx";
+import Login from "./pages/Login.jsx";
+import Index from "./pages/Index.jsx";
+import Products from "./pages/Products.jsx";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(

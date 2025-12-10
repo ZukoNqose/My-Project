@@ -1,27 +1,25 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Layout from "./components/Layout";
+import Index from "./pages/Index";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Products from "./pages/Products";
 import Users from "./pages/Users";
 
-function App() {
+export default function App() {
   return (
     <Router>
-      <nav style={{ display: "flex", gap: "20px", padding: "10px" }}>
-        <Link to="/">Home</Link>
-        <Link to="/login">Login</Link>
-        <Link to="/products">Products</Link>
-        <Link to="/users">Users</Link>
-      </nav>
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/users" element={<Users />} />
-      </Routes>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/users" element={<Users />} />
+        </Routes>
+      </Layout>
     </Router>
   );
 }
-
-export default App;
