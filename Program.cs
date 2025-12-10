@@ -1,122 +1,57 @@
 using DemoDockerApp.Models;
-using DemoDockerApp.Data;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using MongoDB.Driver;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ---------------------------
-// SQL Server (Identity + relational data)
-// ---------------------------
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
-    ?? "Server=(localdb)\\mssqllocaldb;Database=DockerDemoDb;Trusted_Connection=True;MultipleActiveResultSets=true";
+// Add services to the container.
+builder.Services.AddControllersWithViews();
 
+//connectionstring + registration
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
+    ?? Environment.GetEnvironmentVariable("ConnectionStrings__DefaultConnection")
+    ?? "Server=(localdb)\\mssqllocaldb;Database=Docker_db_SE_PT;Trusted_Connection=True;MultipleActiveResultSets=true";
+
+
+// Register EF Core
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(connectionString));
 
-builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
-{
-    options.Password.RequireDigit = true;
-    options.Password.RequiredLength = 6;
-    options.Password.RequireUppercase = false;
-    options.SignIn.RequireConfirmedAccount = false; // for dev
-})
-.AddEntityFrameworkStores<AppDbContext>()
-.AddDefaultTokenProviders()
-.AddDefaultUI();
-
-// Cookie settings for API auth
-builder.Services.ConfigureApplicationCookie(options =>
-{
-    options.Cookie.HttpOnly = true;
-    options.Cookie.SameSite = SameSiteMode.None;
-    options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
-    options.LoginPath = "/Identity/Account/Login";
-    options.AccessDeniedPath = "/Identity/Account/AccessDenied";
-});
-
-// ---------------------------
-// MongoDB (Products, Profile metadata)
-// ---------------------------
-builder.Services.Configure<MongoDbSettings>(builder.Configuration.GetSection("MongoDbSettings"));
-var mongoSettings = builder.Configuration.GetSection("MongoDbSettings").Get<MongoDbSettings>();
-var mongoClient = new MongoClient(mongoSettings.ConnectionString);
-var mongoDatabase = mongoClient.GetDatabase(mongoSettings.DatabaseName);
-
-builder.Services.AddSingleton(mongoClient);
-builder.Services.AddSingleton(mongoDatabase);
-
-// ---------------------------
-// CORS
-// ---------------------------
-var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy(MyAllowSpecificOrigins, policy =>
-    {
-        policy.WithOrigins("http://localhost:5174")
-              .AllowAnyHeader()
-              .AllowAnyMethod()
-              .AllowCredentials();
-    });
-});
-
-// ---------------------------
-// Controllers + Razor Pages
-// ---------------------------
-builder.Services.AddControllers();
-builder.Services.AddControllersWithViews();
-builder.Services.AddRazorPages();
-
-// ---------------------------
-// Build App
-// ---------------------------
 var app = builder.Build();
 
-// ---------------------------
-// DB Migrate & Seed SQL Server
-// ---------------------------
+// Auto apply migrations (optional, helps Docker startup)
 using (var scope = app.Services.CreateScope())
 {
-    var services = scope.ServiceProvider;
-    var db = services.GetRequiredService<AppDbContext>();
+    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
     try
     {
         db.Database.Migrate();
-        await SeedData.SeedRolesAndAdminAsync(services);
     }
     catch (Exception ex)
     {
-        Console.WriteLine($"Migration/seeding failed: {ex.Message}");
+        Console.WriteLine($" Database migration failed: {ex.Message}");
     }
 }
 
-// ---------------------------
-// Middleware
-// ---------------------------
+
+// Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
+    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
-// app.UseHttpsRedirection(); // optional
-app.UseStaticFiles();
+app.UseHttpsRedirection();
 app.UseRouting();
 
-app.UseCors(MyAllowSpecificOrigins);
-app.UseAuthentication();
 app.UseAuthorization();
 
-// ---------------------------
-// Endpoints
-// ---------------------------
-app.MapControllers();
-app.MapRazorPages();
+app.MapStaticAssets();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}")
+    .WithStaticAssets();
+
 
 app.Run();

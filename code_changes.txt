@@ -1,0 +1,82 @@
+Original Program.cs
+
+using DemoApp.Data;
+using Microsoft.EntityFrameworkCore;
+using System.Threading;
+
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+// Get connection string (from appsettings or env)
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
+                       ?? throw new InvalidOperationException("Connection string missing.");
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(connectionString));
+
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
+// Get CORS origins from environment or default to localhost
+// Set env var CORS_ORIGINS to a comma-separated list (e.g. "http://localhost:5173,http://localhost:3000")
+var corsOrigins = builder.Configuration["CORS_ORIGINS"]?.Split(',')
+    ?? new[] { "http://localhost:5173", "http://localhost:3000", "https://demoappfrontend.azurewebsites.net"};
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+        policy =>
+        {
+            policy.WithOrigins(corsOrigins)
+                  .AllowAnyHeader()
+                  .AllowAnyMethod();
+        });
+});
+
+var app = builder.Build();
+
+app.UseCors(MyAllowSpecificOrigins);
+
+// Always enable swagger in this demo (toggle for prod)
+app.UseSwagger();
+app.UseSwaggerUI(c => {
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "DemoApp v1");
+    c.RoutePrefix = "swagger";
+});
+
+// Migrate database on startup with retries
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var logger = services.GetRequiredService<ILogger<Program>>();
+    var db = services.GetRequiredService<AppDbContext>();
+    var retries = 12;
+    while (true)
+    {
+        try
+        {
+            db.Database.Migrate();
+            logger.LogInformation("Database migrated.");
+            break;
+        }
+        catch (Exception ex)
+        {
+            retries--;
+            logger.LogWarning(ex, "Database not ready. Retries left: {retries}", retries);
+            if (retries <= 0) throw;
+            Thread.Sleep(5000);
+        }
+    }
+}
+
+// In container scenarios we typically serve HTTP only; avoid redirect unless non-Development
+if (!app.Environment.IsDevelopment())
+{
+    app.UseHttpsRedirection();
+}
+
+app.UseAuthorization();
+app.MapControllers();
+app.Run();

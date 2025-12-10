@@ -11,11 +11,10 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("DemoDockerApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca3790f84a762f8e6090b86a8daf5aaacdf67e9b")]
 [assembly: System.Reflection.AssemblyProductAttribute("DemoDockerApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DemoDockerApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
